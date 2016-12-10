@@ -39,6 +39,7 @@
 
 #p2, #p3, #p4, #p5 {
 display:none;
+left:10%;
 }
 
 #p1 { background: url('home-back.jpg'); background-size:cover;}
@@ -413,7 +414,7 @@ textarea:focus, input:focus{
       <div class="ct" id="t4">
          <div class="ct" id="t5">
           <ul id="menu" style="top:25%;">
-            <a href="#t1" onclick="fun1()"><li class="icon fa fa-home" id="uno"></li></a>
+            <a href="file:///C:/Users/ATUL%20KUMAR/Desktop/homaneity/hom/index.html"><li class="icon fa fa-home" id="uno"></li></a>
             <a href="#t2" onclick="fun2()"><li class="icon fa fa-cube" id="dos"></li></a>
             <a href="#t3" onclick="fun3()"><li class="icon fa fa-glass" id="tres"></li></a>
             <a href="#t4" onclick="fun4()"><li class="icon fa fa-location-arrow" id="cuatro"></li></a>
@@ -509,10 +510,22 @@ function showPage() {
   document.getElementById("wrapper").style.display = "block";
 }
 
-//function fun2() {
-  //  document.getElementById("p1").style.display = "none";
-  //document.getElementById("p2").style.display = "block";
-//}
+function fun2() {
+document.getElementById("p2").style.display = "block";
+//document.getElementById("p3").style.display = "none";
+//document.getElementById("p4").style.display = "none";
+}
+/*function fun3() {
+document.getElementById("p3").style.display = "block";
+document.getElementById("p4").style.display = "none";
+document.getElementById("p2").style.display = "none";
+}
+function fun4() {
+document.getElementById("p4").style.display = "block";
+document.getElementById("p3").style.display = "none";
+document.getElementById("p2").style.display = "none";
+}
+*/
 
 </script>
 
