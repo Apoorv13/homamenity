@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoamenity</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  
+
+</head>
+
+<body onload="myFunction()">
+    
+<!--<div id="preload_add">-->
+<div id="loaderwrapper">
+<div id="loader">
+<img src="home-1.gif"><br>
+<p>Amenities for the heaven, you call home.</p>
+</div>
+</div>
+<div id="wrapper" class="animate-bottom">
+<body translate="no">
+
+  <div class="ct" id="t1">
+  <div class="ct" id="t2">
+    <div class="ct" id="t3">
+      <div class="ct" id="t4">
+         <div class="ct" id="t5">
+          <ul id="menu">
+            <a href="#t1"><li class="icon fa fa-bolt" id="uno"></li></a>
+            <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos"></li></a>
+            <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li></a>
+            <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
+            <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
+          </ul>
+          <div class="page" id="p1">
+             <section class="icon fa fa-bolt"><span class="title">Bolt</span><span class="hint">Like this pen to see the magic!...<br> Just kidding, it won't happen anything but I'll be really happy If you do so.</span></section>  
+          </div>
+          <div class="page" id="p2">
+            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+          </div>  
+          <div class="page" id="p3">
+            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+          </div>
+          <div class="page" id="p4">
+            <section class="icon fa fa-dribbble">
+              <span class="title">Dribbble</span>
+              <p class="hint">
+                <a href="https://dribbble.com/albertohartzet" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
+              </p>
+              <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
+            </section>
+          </div> 
+          <div class="page" id="p5">
+            <section class="icon fa fa-plus-circle">
+              <span class="title">More</span>
+              <p class="hint">
+                <span>You love one page &amp; CSS only stuff? </span><br>
+                <a href="http://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
+              </p>
+            </section>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-58d22c749295bca52f487966e382a94a495ac103faca9206cbd160bdf8aedf2a.js"></script>
+</div>
+  
+    <script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+    <script src="js/index.js"></script>
+
+<script>
+$(document).ready(function(){
+$(".open").click(function(){
+        $("#search-bar").fadeIn("slow")
+        $(".closesearch").fadeIn("slow")
+        $("search-bar").css("display","block")
+        $(".open").css("display","none")
+        $(".closesearch").css("display","block")
+
+    });
+});
+
+$(document).ready(function(){
+$(".closesearch").click(function(){
+        $("#search-bar").fadeOut("slow")
+        $("search-bar").css("display","none")
+        $(".open").fadeIn("slow")
+        $(".open").css("display","block")
+        $(".closesearch").css("display","none")
+    });
+});
+
+</script>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 4000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("wrapper").style.display = "block";
+}
+</script>
+
+</body>
+</html>

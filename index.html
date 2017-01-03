@@ -2,15 +2,38 @@
 <html >
 <head>
   <meta charset="UTF-8">
+<<<<<<< HEAD
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hoamenity</title>
+=======
+  <title></title>
+  <meta name="designer" content="Alberto Hartzet">
+<meta name="programer" content="Alberto Hartzet">
+<meta name="author" content="Alberto Hartzet">
+<meta name="description" content="One page navigation with pure CSS">
+<meta property="og:url" content="http://codepen.io/hrtzt/details/NPZKRN">
+<meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<<<<<<< HEAD
+=======
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script>
+      function onload(){
+          var img =  document.getElementById(".se-pre-con");
+      }
+	$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");
+	});
+    </script>
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
       <style>
 
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -24,7 +47,11 @@
   -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
   color: #fff;
+<<<<<<< HEAD
   overflow-x: hidden; 
+=======
+  overflow: hidden; 
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
 }
 
 
@@ -38,6 +65,7 @@
 }
 
 #p2, #p3, #p4, #p5 {
+<<<<<<< HEAD
 left:0%;
 display: none;
 opacity: 0;
@@ -54,12 +82,37 @@ opacity: 0;
 #p5 { background: rebeccapurple; z-index: 60}
 
 
+=======
+  left: 200%;
+}
+
+#p1 { background: black; }
+#p2 { background: url('home-cover2-back.jpg'); background-size:cover;}
+#p3 { background: gold; }
+#p4 { background: deeppink; }
+#p5 { background: rebeccapurple; }
+
+#t2:target #p2,
+#t3:target #p3,
+#t4:target #p4,
+#t5:target #p5 {
+  transform: translateX(-190%);
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  -o-transform: translateX(-190%);
+  transition-delay: .4s !important;
+}
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
 
 #t2:target #p1, 
 #t3:target #p1,
 #t4:target #p1,
 #t5:target #p1{
+<<<<<<< HEAD
   background: url('home-back1.jpg'); background-size:cover;
+=======
+  background: black;
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
 }
 
 #t2:target #p1 .icon, 
@@ -71,7 +124,11 @@ opacity: 0;
 
 .icon {
   color: #fff;
+<<<<<<< HEAD
   font-size: 30px;
+=======
+  font-size: 32px;
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
   display: block;
 }
 
@@ -87,10 +144,17 @@ ul .icon:hover {
 #t3:target ul .icon,
 #t4:target ul .icon,
 #t5:target ul .icon{
+<<<<<<< HEAD
   transform: scale(.8);
   -webkit-transform: scale(.8);
   -moz-transform: scale(.8);
   -o-transform: scale(.8);
+=======
+  transform: scale(.6);
+  -webkit-transform: scale(.6);
+  -moz-transform: scale(.6);
+  -o-transform: scale(.6);
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
   transition-delay: .25s;
 }
 
@@ -104,6 +168,7 @@ ul .icon:hover {
   -o-transform: scale(1.2) !important;
 }
 
+<<<<<<< HEAD
 
 ul {
   position: fixed;
@@ -126,6 +191,22 @@ padding-top:160%;
 }
  
 #list .icon {
+=======
+ul {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 280px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+ }
+
+#menu .icon {
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
   margin: 30px 0;
   transition: all .5s ease-out !important;
   -webkit-transition: all .5s ease-out;
@@ -142,6 +223,7 @@ a {
 }
 
 .title {
+<<<<<<< HEAD
   font-size: 35px;
   font-family: 'Comfortaa', cursive;
   text-shadow: 1px 1px 1px #000000;
@@ -154,6 +236,16 @@ a {
   font-size: 20px;
   font-family: 'Comfortaa', cursive;
   text-shadow: 2px 2px 2px #000000;
+=======
+  font-size: 42px;
+  font-family: Righteous;
+}
+
+.hint {
+  font-size: 16px;
+  font-family: 'Comfortaa', cursive;
+
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
 }
 
 #p4 .hint {
@@ -182,8 +274,13 @@ a {
   bottom: 0;
   right: 10%;
   left: 0;
+<<<<<<< HEAD
   width: 60%;
   height: auto;
+=======
+  width: 270px;
+  height: 170px;
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
   margin: auto;
   text-align: center;
   font-size: 80px;
@@ -226,6 +323,7 @@ a {
     z-index:9999;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width:500px){
 .side-menu{
     position:fixed;
@@ -275,15 +373,25 @@ input{
 
 }
 
+=======
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
 .overlay {
     height: 0%;
     width: 100%;
     position: fixed;
+<<<<<<< HEAD
     z-index: 10000;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
+=======
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 1.0);
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -334,13 +442,17 @@ input{
     right:40px;
     color:white;
     z-index:9999;
+<<<<<<< HEAD
     font-size: 25px;
+=======
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
 }
 
 #search-bar{
 
     display:none;
 }
+<<<<<<< HEAD
 
 .closesearch{
 
@@ -350,6 +462,10 @@ input{
 
 input{
   background-color:transparent;
+=======
+input{
+  background-color:black;
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -363,6 +479,7 @@ textarea:focus, input:focus{
 }
 
 #loader {
+<<<<<<< HEAD
   background-color:#ffffff;
   position: absolute;
   top:25%;
@@ -526,6 +643,34 @@ hr.style2 {
 }
 
 </style>
+=======
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    </style>
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -534,6 +679,7 @@ hr.style2 {
 
 </head>
 
+<<<<<<< HEAD
 <body onload="myFunction()">
     
 <!--<div id="preload_add">-->
@@ -544,6 +690,11 @@ hr.style2 {
 </div>
 </div>
 <div id="wrapper" class="animate-bottom">
+=======
+<body>
+<div class="se-pre-con"></div>  
+<!--<div id="preload_add">-->
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
     <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -554,10 +705,16 @@ hr.style2 {
   </div>
 </div>
 <div class="search">
+<<<<<<< HEAD
   <i class="fa fa-search open search"></i>
   <i class="fa fa-times search closesearch"></i>
   <div id="search-bar">
   <input type="text" class="search-input">
+=======
+  <i class="fa fa-search fa-2x" onclick="search()"></i>
+  <div id="search-bar">
+  <input type="text" class="search-input"><i class="fa fa-times fa-2x" style="display: inline-block;"></i>
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
   </div>
 </div>
 
@@ -571,6 +728,7 @@ hr.style2 {
     <div class="ct" id="t3">
       <div class="ct" id="t4">
          <div class="ct" id="t5">
+<<<<<<< HEAD
           <ul id="menu" >
           <div id="list">
             <a href="#t1" onclick="fun1()"><li class="icon fa fa-home" id="uno"></li></a>
@@ -616,6 +774,45 @@ hr.style2 {
               </div>
           </div> 
           <div class="page" id="p5" style="">
+=======
+          <ul id="menu" style="top:25%;">
+            <a href="#t1"><li class="icon fa fa-home" id="uno"></li></a>
+            <a href="#t2"><li class="icon fa fa-cube" id="dos"></li></a>
+            <a href="#t3"><li class="icon fa fa-glass" id="tres"></li></a>
+            <a href="#t4"><li class="icon fa fa-location-arrow" id="cuatro"></li></a>
+            <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
+          </ul>
+          <div class="page" id="p1">
+             <section class="icon "><img src="logo.png" style="height:60%;"><span class="title">Hoamenity</span><span class="hint">Amenities for the heaven, <br>you call home.</span></section>  
+          </div>
+          </div>
+        
+          <div class="page" id="p2">
+              <section>
+              <div class="row" style="padding-top:10%;">
+                  <div class="col-md-4 col-sm-3">
+                      <img class="img-responsive" src="frame.png" width="60%" style="display:block; margin:auto;">
+                  </div>
+                  <div class="col-md-8 col-sm-9">
+                      <img class="img-responsive" src="home-app.png" width="80%" style="display:block; margin:auto;">
+                  </div>
+                  </section>
+              </div>
+          </div>  
+          <div class="page" id="p3">
+            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+          </div>
+          <div class="page" id="p4">
+            <section class="icon fa fa-dribbble">
+              <span class="title">Dribbble</span>
+              <p class="hint">
+                <a href="https://dribbble.com/albertohartzet" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
+              </p>
+              <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
+            </section>
+          </div> 
+          <div class="page" id="p5">
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
             <section class="icon fa fa-plus-circle">
               <span class="title">More</span>
               <p class="hint">
@@ -627,9 +824,16 @@ hr.style2 {
         </div>
       </div>
     </div> 
+<<<<<<< HEAD
 </div>
 </div>
   
+=======
+  </div>
+</div>
+  
+</div>
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
     <script>
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
@@ -642,6 +846,7 @@ function closeNav() {
     <script src="js/index.js"></script>
 
 <script>
+<<<<<<< HEAD
 $(document).ready(function(){
 $(".open").click(function(){
         $("#search-bar").fadeIn("slow")
@@ -747,5 +952,12 @@ document.getElementById("phone").style.display = "none";
 
 </script>
 
+=======
+function search(){
+    document.getElementById("search-bar").style.display = "block";
+    document.getElementById("search").style.display = "none";
+}
+</script>
+>>>>>>> 8e189ece7bcda5ad62cd2e98ae5d060aff988489
 </body>
 </html>
