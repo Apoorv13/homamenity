@@ -23,8 +23,10 @@ $q4 = "INSERT INTO allcategories (category) VALUES ('$catname')";
 mysqli_query($dbc2,$q2);
 mysqli_query($dbc2,$q3);
 mysqli_query($dbc2,$q4);
-?>
 
+?>
+<?php include 'header.php' ?>
+<?php include 'sidebar.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +41,7 @@ mysqli_query($dbc2,$q4);
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
-<?php echo '<h1 style="text-align:center">Add fields in '.$catname.'</h1><br>';?>
+<?php echo '<h1 style="text-align:center;padding:30px;margin-top:30px;">Add fields in '.$catname.'</h1><br>';?>
 </body>
 </html>
 <?php
@@ -55,9 +57,9 @@ while($count1<=$fieldno)
 <p>Field '.$count1.': </p>
 </div>
 <div class="col-md-3">
-<label>Fieldname:</label><br>
-<input type="text" name="fieldname'.$count1.'" required />
-</div>
+<label>Fieldname:<br>
+<input type="text" style="width:90px !important;height:30px !important;" name="fieldname'.$count1.'" required />
+</label></div>
 <div class="col-md-3">
 <label>Fieldtype:</label>
 <select name="fieldtype'.$count1.'" class="form-control" required>

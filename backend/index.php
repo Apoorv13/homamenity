@@ -2,7 +2,7 @@
 session_start();
 $Err = "";
 if(isset($_SESSION['email'])){
-	header ('Location:adminprofile.php');
+	header ('Location:dashboard.php');
 	}else{
 if($_POST)
 {
@@ -13,7 +13,7 @@ if($_POST)
 
 if($num==1){
 $_SESSION['email']=$_POST['email'];
-header('Location:adminprofile.php');
+header('Location:dashboard.php');
 }
 else{
 $Err = "Email or Password is incorrect";
@@ -41,7 +41,7 @@ $Err = "Email or Password is incorrect";
 <div class="row">
 <div class="col-md-offset-3 col-md-6">
 <div style="margin-top:50px;border:2px solid black; width:100%; height:330px;">
-<h2 style="font-family:sans-serif; text-align:center;">Hoamenities</h2>
+<h2 style="font-family:sans-serif; text-align:center;">Hoamenities | Admin</h2>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
   <div class="form-group" style="width:80%; display:block; margin:auto;">
     <label for="exampleInputEmail1">Username</label>
@@ -59,7 +59,6 @@ $Err = "Email or Password is incorrect";
 </div>
 <div class="row">
 <div class="col-md-offset-3 col-md-6">
-<h1><a href="index.php" style="text-decoration:none;">Go back</a></h1>
 </div>
 </div>
 </div>

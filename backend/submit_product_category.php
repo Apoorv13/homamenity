@@ -5,6 +5,8 @@ if(!isset($_SESSION['email'])){
 	header ('Location:home.php');
 }*/
 ?>
+<?php include 'header.php' ?>
+<?php include 'sidebar.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +37,7 @@ if(!isset($_SESSION['email'])){
 <body>
 	<section>
 <div>
-<h1 style="text-align:center;">Add Product</h1><br><br>
+<h1 style="text-align:center; margin-top:30px;padding:20px;">Add Product</h1><br><br>
 <form method="post" action="submit_product_details.php" enctype="multipart/form-data">
 <div class="container">
 <div class="row">

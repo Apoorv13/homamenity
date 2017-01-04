@@ -1,8 +1,8 @@
 <?php
-/*session_start();
+session_start();
 if(!isset($_SESSION['email'])){
-	header ('Location:adminlogin.php');
-	}*/
+	header ('Location:index.php');
+	}
 	?>
 <!DOCTYPE html> 
 <html>
